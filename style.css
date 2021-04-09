@@ -1,0 +1,217 @@
+/* Colors
+black #221f1f
+red #e50914
+white #f5f5f1
+dark grey #292f33 */
+
+/* Fonts
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Poppins', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #6b6b6b;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 0, 0);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 0, 0);
+}
+
+header{
+  background-color: rgba(0, 0, 0, 0.972);
+  height: 12vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+header form{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#spotlight{
+  background: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#spotlight h3{
+  color: white;
+  margin-top: 15vh;
+  font-family: 'Martel Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 47px;
+}
+
+#spotlight a{
+  text-decoration: none;
+  background-color: #c70a13;
+  color: white;
+  padding: 14px 30px 10px;
+  border-radius: 10px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  margin-top: 5vh;
+  text-transform: uppercase;
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: 700;
+  box-shadow: 0 0 60px #e50914;
+
+}
+#spotlight a:hover{
+  box-shadow: 0 0 30px white;
+  background-color: #c70a13;
+}
+
+
+/* Movies Page */
+
+#release-head{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+}
+
+#inputValue, input[text]{
+  height: 30px;
+  width: 30vw;
+  max-width: 300px;
+  margin-top: 2.5vh;
+  margin-right: 1vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #c70a13;
+  border-radius: 10px;
+  caret-color: red;
+  color: white;
+  font-family: 'Martel Sans', sans-serif;
+  padding-left: 10px;
+}
+input:focus{
+  outline: none;
+  background-color: transparent;
+}
+#search{
+  text-decoration: none;
+  background-color: #c70a13;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-family: 'Martel Sans', sans-serif;
+  right: 0;
+  height: 30px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: none;
+  margin-right: 2vw;
+  
+  box-shadow: 0 0 10px #e50914;
+}
+
+#search:hover{
+  opacity: 90%;
+  cursor: pointer;
+}
+
+
+
+.movie{
+  margin-bottom: 50px;
+}
+
+h2{
+  font-family: 'Martel Sans', sans-serif;
+  padding-top: 12vh;
+  color: #e50914;
+  font-size: 30px;
+}
+
+
+section{
+  padding-top: 12vh;
+  padding-bottom: 30px;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+}
+
+section img{
+  width: 300px;
+  transition: 250ms all;
+}
+
+
+section img:hover{
+  margin:0 30px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.content{
+  color: white;
+  display: none;
+  margin-top: 35px;
+}
+
+.content div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+#content-close{
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(94, 0, 0);
+  margin: 0 35vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content-display{
+  display: block;
+}
+
+.content-display div iframe{
+  margin-bottom: 20px;
+  position: relative;
+  width: 40%;
+}
+
